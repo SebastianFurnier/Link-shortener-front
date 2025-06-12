@@ -13,7 +13,7 @@ function RedirectHandler() {
       if (!id) return;
 
       try {
-        const res = await fetch(`http://localhost:8080/${id}`);
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/${id}`);
         if (!res.ok) {
           throw new Error("URL no encontrada");
         }
