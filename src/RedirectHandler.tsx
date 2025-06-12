@@ -13,7 +13,7 @@ function RedirectHandler() {
       if (!id) return;
 
       try {
-        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/${id}`);
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/get/${id}`);
         if (!res.ok) {
           throw new Error("URL no encontrada");
         }
