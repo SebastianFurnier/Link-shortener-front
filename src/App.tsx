@@ -17,7 +17,6 @@ function App() {
           <Route path="/:id" element={<RedirectHandler />} />
         </Routes>
       </Router>
-      <Home />
     </>
   )
 }
