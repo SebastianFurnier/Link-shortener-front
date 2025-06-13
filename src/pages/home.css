@@ -101,3 +101,14 @@ a {
     color: #fff;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .home-description {
+        display: none;
+    }
+}
